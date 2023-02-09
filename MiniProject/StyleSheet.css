@@ -1,0 +1,150 @@
+﻿/*#Button1:hover,#Button2:hover{
+    background-color: burlywood;
+    cursor: pointer;
+}*/
+@import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+.patterns {
+    height: 70vh;
+}
+
+svg text {
+    font-family: Lora;
+    letter-spacing: 10px;
+    stroke: #53fb0f;
+    font-size: 100px;
+    font-weight: 700;
+    stroke-width: 3;
+    animation: textAnimate 5s infinite alternate;
+}
+
+@keyframes textAnimate {
+    0% {
+        stroke-dasharray: 0 50%;
+        stroke-dashoffset: 20%;
+        fill: hsl(189, 68%, 75%)
+    }
+
+    100% {
+        stroke-dasharray: 50% 0;
+        stroke-dashoffset: -20%;
+        fill: hsla(189, 68%, 75%,0%)
+    }
+}
+
+.auto-style1 {
+    width: 100%;
+    background-image: url("https://img.freepik.com/premium-photo/modern-luxury-office-coffee-shop-cafe-restaurant-with-wooden-table-background_43300-3133.jpg?w=2000");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.auto-style2 {
+    background-image: url('https://media.istockphoto.com/photos/glass-with-wine-on-the-table-picture-id495393428?k=20&m=495393428&s=170667a&w=0&h=r8W1UHVxRRVAUQdX08uKAITiGuiI6clVG_3uzl_o4eA=');
+    width: 206px;
+    height: 428px;
+}
+
+.auto-style3 {
+    background-image: url('https://media.istockphoto.com/photos/wood-table-in-blurry-background-of-modern-restaurant-room-or-coffee-picture-id1187265759?k=20&m=1187265759&s=170667a&w=0&h=nzPOtieLi5rQAkMyuGC1UKbUt5FwTdBZ_T63LcA3Eww=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 428px;
+    text-align: center;
+}
+
+.auto-style4 {
+    background-image: url('https://t3.ftcdn.net/jpg/02/21/40/16/360_F_221401603_6urJw6Di9KjlgcPgLfkdVLHtc5Q21aCx.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 266px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Button {
+    background-color: rgb(243 169 65 / 0.64);
+    border-radius: 16px;
+    border-color: #f96d39;
+}
+
+.btn:hover {
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+#Button1:hover, #Button2:hover, #Button3:hover, #Button4:hover {
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.img {
+    background-image: url("https://t3.ftcdn.net/jpg/02/21/40/16/360_F_221401603_6urJw6Di9KjlgcPgLfkdVLHtc5Q21aCx.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imgButt {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+    .imgButt:hover {
+        opacity: 0.5;
+    }
+
+.lbl:hover {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    0% {
+        background-color: aqua;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: mediumspringgreen;
+        left: 200px;
+        top: 0px;
+    }
+
+    100% {
+        background-color: darkkhaki;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.auto-style5 {
+    height: 30px;
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient( -225deg, #ff0202 0%, aqua 29%, #0f006b 67%, aqua 100% );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 70px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}

@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <!--<style type="text/css">
+        
+    </style>-->
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div style="text-align:center;">
+    <form id="form1" runat="server">     
+    <table class="auto-style1" cellspacing="8">
+        <tr>
+            <td colspan="2" class="auto-style4">
+                <br />
+                <br />
+                <br />
+                <br />
+                <asp:Label ID="Label1" runat="server" Text="MINI RESTURANT MANGEMENT" Font-Bold="True" Font-Italic="True" Font-Names="Lucida Calligraphy" Font-Size="XX-Large" ForeColor="#000066" CssClass="lbl" style="background-color:rgb(231 148 148 / 0.56);"></asp:Label>
+                
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style2">
+                <br />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" PostBackUrl="~/Add_stock.aspx" Text="Add Stock" Height="100px" Width="200px" CssClass="Button" Font-Bold="True" Font-Names="Rockwell" Font-Size="Large" ForeColor="#660066" />
+                <br />
+                <br />
+                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" PostBackUrl="~/Add_NewDish.aspx" Text="Add new dish" Height="100px" Width="200px" CssClass="Button" Font-Bold="True" Font-Names="Rockwell" Font-Size="Large" ForeColor="#660066"/>
+                <br />
+                <br />
+                <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" PostBackUrl="~/Check_Stock.aspx" Text="Check stock" Height="100px" Width="200px" CssClass="Button" Font-Bold="True" Font-Names="Rockwell" Font-Size="Large" ForeColor="#660066" />
+                <br />
+                <br />
+                <asp:Button ID="Button4" runat="server" Text="Remove Dish" PostBackUrl="~/Remove_dish.aspx" Height="100px" Width="200px" CssClass="Button" Font-Bold="True" Font-Names="Rockwell" Font-Size="Large" ForeColor="#660066"/>
+                <br />
+            </td>
+            <td class="auto-style3">
+                
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="auto-style5">
+                 <svg width="100%" height="20%" class="patterns">
+                       <text x="50%" y="13%"  text-anchor="middle"  >
+                            THANKS FOR VISIT
+                        </text>
+                </svg>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Italic="True" Font-Names="Rockwell" Font-Size="XX-Large" ForeColor="#66FFFF" Text="Created By 17-42"></asp:Label>
+            </td>
+        </tr>
+    </table>
+    </form>
+</div>
+</body>
+</html>
